@@ -1,0 +1,78 @@
+@import "../../css-config/mixins.scss";
+
+// TestimonialsSection.scss
+.testimonials-container {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    max-height: 500px;
+    @include md {
+      margin: 50px 0;
+    }
+    h2 {
+      // font-size: 30px;
+      // font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    .testimonial-list {
+      // display: flex;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+      // justify-content: center;
+      
+  
+      .testimonial-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        background-color: #eeebeb;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        text-align: left;
+
+        
+        
+        .testimonial-author {
+          margin-top: 8px;
+          font-size: 14px;
+          display: flex;
+          gap: 30px;
+          // justify-content: space-between;
+          
+          .image {
+            background-color: #777;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 3.5rem;
+              border-radius: 50%;
+            }
+
+          }
+          .details {
+
+            strong {
+              display: block;
+              font-size: 16px;
+            }
+            
+            span {
+              color: #777;
+
+            }
+          }
+        }
+        p {
+          font-size: 16px;
+          margin-top: 15px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  

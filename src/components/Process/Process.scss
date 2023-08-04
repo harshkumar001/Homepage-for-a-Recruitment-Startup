@@ -1,0 +1,55 @@
+// ServicesSection.scss
+@import "../../css-config/mixins.scss";
+
+
+.services-container {
+  margin: 25px 0;
+  @include md {
+     margin: 50px 10px;
+  }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+  
+    .service {
+      max-width: 400px;
+      // margin-bottom: 40px;
+      text-align: center;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+
+      .image {
+        height: 80px;
+        width: 80px;
+        margin: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c8c1d8;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid black;
+        }
+        img {
+          height: 50px;
+        }
+
+      }
+      h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    }
+  }
+  
